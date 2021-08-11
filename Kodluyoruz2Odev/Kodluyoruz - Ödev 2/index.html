@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="">
+  <title>Yapılacaklar Listesi</title>
+</head>
+
+<body>
+  <div id="alert" class="alert alert-danger alert-dismissible col-2 fade show" style="display: none; float: right;">
+    <span id="alertinnerhtml"></span>
+    <button id="closealert" onclick="closealert()" type="button" class="btn-close"></button>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <img src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
+        class="mb-1" alt="" />
+      <h2>Yapılacaklar Listesi</h2>
+      <input type="text" id="task" placeholder="Bugün ne yapacaksın?" />
+      <button type="submit" onclick="add()" id="liveToastBtn" class="button">Ekle</button>
+    </div>
+
+    <ul id="list"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
